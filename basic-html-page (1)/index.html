@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML Page</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+  <!--
+This is a comment. Everything in the tag is ignored by the computer but should have some meaning for the humans that see it. 
+
+Another common use of comments is to disable part of the layout, usually temporarily, without actually removing it.
+-->
+<head>
+    <!-- metadata elements like link, meta, title, and style go here-->
+  <title>The best page ever!</title>
+  </head>
+  
+  <body>
+    <main><h1 id="title">Basic HTML Page</h1>
+<p>This page demonstrates some of the tools used to create the structure of a page. <p>
+  <p>It's really important to use descriptive HTML tags because they improve accessiblity so that more people can use and enjoy you site. Easier to read HTML and improved SEO are two bonus benefits of using the proper tags.<p>
+<p>Some of these tags include header, footer, nav, video, article, section, and main. I'll make a page later demonstrating more of these tags and leave a link here.</p>
+</main>
+
+<hr>
+
+<div>
+<h2>This is an H2 heading.</h2>
+<p>This is a paragraph. You could write lots of stuff in here or only a little bit if you don't have much to say. You could also just use lorem ipsum placeholder text. </p>
+
+<p>Below is an image. It has an alt attribute that help with accessiblity because screen readers can use it and it will also display if the image fails to load. If the image is only used for decoration then the best practice is to use an empty alt attribute. I used the &ltfigure&gt tag to hold the &ltimage&gt and &ltfigcaption&gt tags so I could get the caption below the picture.</p>
+
+<figure>
+<img src="https://res.cloudinary.com/ohmyglob/image/upload/v1554100544/Vassily_Kandinsky__1937_-_Thirty.jpg" alt="A painting by artist Wassily Kandinsky titled Thirty" width=50%>
+  <figcaption><i>Thirty</i> by Wassily Kandinsky</figcaption>
+</figure>
+</div>
+
+<hr>
+
+<div>
+<p>Try clicking <a href="https://www.w3schools.com/tags/tag_a.asp">this link</a> to learn how anchor elements work.</p>
+<p>If you click <a href="#title">here</a> instead, you'll be taken back to the top of the page and have to start all over again.</p>
+</div>
+
+<hr>
+
+<div>
+<p> This is an unordered list so it shows items without any numbering:</p>
+<ul>
+  <li>Sudowoodo</li>
+  <li>Katamari Damacy</li>
+  <li>Tempura</li>
+</ul>
+
+<p> This is an ordered list so items are displayed with numbers:</p>
+<ol>
+  <li>primary</li>
+  <li>secondary</li>
+  <li>tertiary</li>
+</ol>
+</div>
+
+<hr>
+
+<div>
+<p>This is a web form that could actually submit data to a server if I had a server to send it to: </p>
+<form action="/url-where-you-want-to-submit-form-data">
+  <input type="text" placeholder="I'm placeholder text, woohoo!" required>
+  <button type="submit">Press Me</button>
+  
+  <br>
+  <br>
+  
+  <p>These are radio buttons. They are grouped together because they have the same name attribute so if one is chosen the others will automatically be deselected. To create an accessible site, the for attribute in the label should be set to the same thing as the input element's id so there's a link between the label and the child input element.</p>
+  <label for="me"><input id="me" type="radio" name="picky">pick me</label>
+  <label for="outdoor"><input id="or" type="radio" name="picky">or me</label>
+  <label for="decide"><input id="decide" type="radio" name="picky">pick me if you can't decide</label>
+  
+  <br>
+  <br>
+  
+  <p> These are checkboxes and they are set up very similar to radio buttons. Unlike radio buttons, multiple selections can be made.</p>
+  <label for="me2"><input id="me2" type="checkbox" name="choices">you could choose me</label>
+  <label for="andOr"><input id="andOr" type="checkbox" name="choices">and/or me</label>
+  <label for="all"><input id="all" type="checkbox" name="choices"> you can choose all of us if you want</label>
+  <label for="check"><input id="check" type="checkbox" name="choices" checked> I start out pre-checked for you ;)</label>
+</form>
+</div>
+  </body>
+</html>
+  
+  
+
+</body>
+
+</html>

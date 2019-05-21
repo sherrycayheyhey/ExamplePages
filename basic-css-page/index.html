@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic CSS Page</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <!–– Font URL to import the Google Font ––> 
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+  h2 {
+    color: purple;
+  }
+  
+  .blue-text {
+    color: blue;
+  }
+  
+  .orange-text {
+    color: orange;
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-family: monospace;
+  }
+  
+  #google-font {
+  
+    font-family: Lobster, monospace;
+    color: red;
+  }
+  
+  .small-image {
+    width: 500px;
+  }
+  
+  .pink-border {
+    border-color: pink;
+    border-width: 4px;
+    border-style: dotted;
+  }
+  
+  .round-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  
+  #aqua-background-paragraph {
+    background-color: aqua;
+  }
+  
+  .injected-text {
+    margin-bottom: -35px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+    
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+    
+  }
+  
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    padding: 5px;
+    margin: 50px;
+  }
+  
+  /* Margin is set using shorthand, unlike the padding here, and the pattern to remeber is like a clock: top, right, bottom, left */
+  .purple-box {
+    background-color: purple;
+    color: #fff;
+    padding-top: -5px;
+    padding-right: -5px;
+    padding-bottom: 20px;
+    padding-left: 120px;
+    margin: 40px 95px 1px 5px;
+  }
+  
+</style>
+
+<h1>Basic CSS Page</h1>
+<p>This page demonstrates some of the tools used to create the style of a page. <p>
+<p>Cascading Style Sheets (CSS) tell the browser how to display the text and other content that you write in HTML. CSS allows color, fonts, positioning, spacing, sizing, decorations, and transitions to be added to pages and controled.</p>
+<p>CSS can be applied directly to HTML
+ elements inline by using the style attribute, by placing the rules within a style tag in the HTML document, or in their own extrernal style sheet that can be referenced in the HTML document.</p>
+
+<hr>
+
+<h2 style="color: pink;">This H2 is styled inline to be the color blue. This will only apply to this single H2 element.</h2>
+
+<h2>This is an H2 too but it's styled with a style block. Any H2 that isn't assigned an id, class, or given inline styling will look like this.</h2>
+
+<h2 class="blue-text">Another H2 here! This time it was styled using a class attribute. </h2>
+
+<p class="orange-text">Orange you glad I didn't say this is another H2 element? This is a paragraph added to a class that turns text orange.</p>
+
+<h2 class="orange-text">And this is an H2 that's been added to that same class.</h2>
+
+<h3>This is an H3, which should be smaller than an H2. It's had its font-size styled so as long as your browser displays H2 elements smaller than 32px, this will appear larger than than an H2, weird! It also has a monospace font-family applied so it's funky too!</h3>
+
+<h2 id="google-font">Another H2 here! This time using an ID to apply a font-family that comes from Google Font. It's called lobster, hehe! If the Lobster font isn't available then this will just degrade to monospaced text because I added it to the id styling.</h2>
+
+<figure class="small-image">
+  <img class="small-image pink-border" src="https://res.cloudinary.com/ohmyglob/image/upload/v1557940799/wallymaze.png">
+  <figcaption>This image is actually 2560 pixels wide but was shrunk to 500 pixels wide using the width property. Oh, and those cute pink dots come from another class the image belongs to that applies a border.</figcaption>
+</figure>
+
+
+ <figure class="small-image">
+  <img class="small-image round-border" src="https://res.cloudinary.com/ohmyglob/image/upload/v1552357050/steg.jpg">
+  <figcaption>This dino is lookin cute in its oval green border. The border radius was set to 50% to achieve this look and if the image were a square instead the image and border would be a circle!</figcaption>
+</figure> 
+ 
+<p id="aqua-background-paragraph">This would normally be just a plain ol' boring paragraph but it's had an aqua background so it's fun and exciting instead!</p>
+
+<p>Padding, margin, and border are the magic tools that control the space surrounding each HTML element.</p>
+<h5 class="injected-text">The margin controls the amount of space between an element's border and surrounding elements. The red box has a margin on 20px and the blue box has a margin of 50px so the blue box will be pushed further away from the edges of the yellow box than the red one is.</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">This padding controls the amount of space between the element's content and its border. The padding here is set to 30px.</h5>
+  <h5 class="box blue-box">There's less padding here than in the red box above because this is set to only 5px of padding.</h5>
+  <h5 class="box purple-box">This guy is positioned using different numbers for each the top, bottom, right, and left padding values. It has each side of the margin set individually, too!</h5>
+</div>
+  
+  
+
+</body>
+
+</html>
